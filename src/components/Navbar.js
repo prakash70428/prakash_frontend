@@ -39,6 +39,9 @@ const Navbar = () => {
                 <Link to="/contact">Contact</Link>
             </li>
             <li>
+                <Link to="/mockinterview">Mock Interview</Link>
+            </li>
+            <li>
                 <Link to="/enroll">Enroll Now</Link>
             </li>
         </ul>

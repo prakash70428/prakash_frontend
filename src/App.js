@@ -6,6 +6,7 @@ import Course from "./routes/Course";
 import About from "./routes/About";
 import Contact from "./routes/Contact";
 import Enroll from "./routes/Enroll";
+import Mockinterview from "./routes/Mockinterview";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/enroll" element={<Enroll />} />
+        <Route path="/mockinterview" element={<Mockinterview />} />
       </Routes>
     </>
   );

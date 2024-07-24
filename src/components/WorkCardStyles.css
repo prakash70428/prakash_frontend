@@ -1,4 +1,4 @@
-.course-heading {
+/* .course-heading {
     text-align: center;
     padding: 4rem 0 2rem 0;
 }
@@ -51,4 +51,111 @@
         margin: auto;
         grid-template-columns: 1fr;
     }
+} */
+/* --------------------------------------------------------------------------------- */
+.course-heading {
+    text-align: center;
+    padding: 4rem 0 2rem 0;
 }
+
+.course-container {
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(3,1fr); */
+    grid-gap: 40px;
+    padding-bottom: 5rem;
+}
+
+.course-card {
+    background: #1a1919;
+    display: flex;
+    padding: 1.2rem 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 320px;
+}
+
+.course-card img {
+    width: 100%;
+}
+
+.course-title {
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.crs-details p {
+    padding-bottom: 1rem;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.crs-btns {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+
+.crs-btns .btn {
+    padding: 0.5rem 1rem;
+}
+
+@media screen and (max-width: 740px) {
+    .course-container {
+        max-width: 90%;
+        margin: auto;
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.card-detail-container{
+    position: fixed;
+    z-index: 1000;
+    inset: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+.card-detail-container-visibility{
+    visibility: visible;
+    opacity: 1;
+}
+  
+.card-detail {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-width: 400px;
+      max-width: 80%;
+      max-height: 80vh;
+      overflow-y: auto;
+      background-color: rgb(255, 255, 255);
+      outline: solid 0px;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 11px 15px -7px, rgba(0, 0, 0, 0.14) 0px 24px 38px 3px, rgba(0, 0, 0, 0.12) 0px 9px 46px 8px;
+      padding: 16px;
+      border-radius: 10px;
+
+      h2,h3{
+        font-size: 1.25rem;
+        line-height: 1.6;
+        font-weight: 600;
+        }
+        span {
+            display: inline-block;
+            margin-bottom: 16px;  
+        }
+
+        strong{
+            text-transform: capitalize;
+        }
+
+        ul{
+            padding-left: 28px;
+            font-weight: 400;
+            font-size: 1rem;
+        }
+  }

@@ -18,13 +18,13 @@ const CourseCardData = [
         view: "https://youtu.be/_afGoen6qg0",
         syllabus: <PdfDownloader src="src/assets/javasyllabus.pdf" btnText="syllabus"  filename="javasyallubus.pdf" />
       },
-      {
-        imgsrc: prs3,
-        title: "Master Data Structures and Algorithms using Python",
-        text: "This is the most fundamental course in Python designed for beginners. Python has now become one of the hottest and most sought-after programming languages and it can kickstart your Python programming skills from zero to hero. The course is going to encompass concepts like writing simple programs in Python, built-in Data Structures and learning program execution techniques like Multithreading & Multiprocessing. Python is extensively used in domains such as Big Data, Data Visualization, Machine Learning, Deep Learning, Artificial Intelligence, etc. Our Python experts,Raghav Dalmia, are the guiding instructors for the Python course. Python is used extensively in the software development industry as well in Data Science. Popular Web Apps like Youtube & Instagram are built in Python. To acquire advanced skills in Python, we advise the keen learners to further opt for the next and advanced level- Python for Data Science or Python for Developers.",
-        view: "https://youtu.be/_afGoen6qg0",
-        syllabus: <PdfDownloader src="src/assets/javasyllabus.pdf" btnText="syllabus"  filename="javasyallubus.pdf" />
-      }
+      // {
+      //   imgsrc: prs3,
+      //   title: "Master Data Structures and Algorithms using Python",
+      //   text: "This is the most fundamental course in Python designed for beginners. Python has now become one of the hottest and most sought-after programming languages and it can kickstart your Python programming skills from zero to hero. The course is going to encompass concepts like writing simple programs in Python, built-in Data Structures and learning program execution techniques like Multithreading & Multiprocessing. Python is extensively used in domains such as Big Data, Data Visualization, Machine Learning, Deep Learning, Artificial Intelligence, etc. Our Python experts,Raghav Dalmia, are the guiding instructors for the Python course. Python is used extensively in the software development industry as well in Data Science. Popular Web Apps like Youtube & Instagram are built in Python. To acquire advanced skills in Python, we advise the keen learners to further opt for the next and advanced level- Python for Data Science or Python for Developers.",
+      //   view: "https://youtu.be/_afGoen6qg0",
+      //   syllabus: <PdfDownloader src="src/assets/javasyllabus.pdf" btnText="syllabus"  filename="javasyallubus.pdf" />
+      // }
 ];
 
 export default CourseCardData;
