@@ -11,9 +11,8 @@ const PdfDownloader = ({src,btnText,filename}) => {
   };
 
   return (
-    <div>
+    
       <button onClick={handleDownload} className="btn">{btnText}</button>
-    </div>
   );
 };
 

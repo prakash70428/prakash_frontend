@@ -18,6 +18,9 @@ const Work = () => {
                   text={val.text}
                   view={val.view}
                   syllabus={val.syllabus}
+                  college={val.college}
+                  company = {val.company}
+                  name={val.name}
                 />
             )
           })}

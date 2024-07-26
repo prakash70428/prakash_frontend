@@ -1,6 +1,7 @@
 import React,{useRef, useEffect} from 'react'
 import './WorkCardStyles.css'
 import WorkCard from './WorkCard';
+import { NavLink } from 'react-router-dom';
 const ShowDetail = ({setShowDetail,...detail}) => {
     const {ind,imgsrc,title,text,view,syllabus }= detail.detail;
    
@@ -38,15 +39,27 @@ const ShowDetail = ({setShowDetail,...detail}) => {
   return (
     <div className='card-detail-container' ref={refDetail}>
         <div className='card-detail' >
-           <WorkCard 
-            key={ind}
-            imgsrc={imgsrc}
-            title={title}
-            text={text}
-            view={view}
-            syllabus={syllabus}
-           />
-       </div>
+        
+            <div className='card-detail-body'>
+                <img src={imgsrc} alt="image" style={{width:"300px", height:"300px"}}/>
+                <div>
+                    <h2 className="course-title">{title}</h2>
+                    <p>{text}</p>
+                </div>
+            </div>  
+
+    
+            <div className="crs-details">
+                <div className="crs-btns">
+                    <NavLink to={view} className="btn">Watch</NavLink> 
+                    {/* <button onClick={()=>setShowDetail(!show)} className="btn">View More</button> */}
+                    {/* <NavLink to={props.syllabus} className="btn">Syllabus</NavLink> */}
+                    {syllabus}
+                </div>
+            </div>
+         
+       
+        </div>
     </div>
   )
 }

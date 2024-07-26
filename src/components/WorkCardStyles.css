@@ -84,7 +84,7 @@
 
 .course-title {
     color: #fff;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
 }
 
 .crs-details p {
@@ -103,13 +103,7 @@
     padding: 0.5rem 1rem;
 }
 
-@media screen and (max-width: 740px) {
-    .course-container {
-        max-width: 90%;
-        margin: auto;
-        grid-template-columns: 1fr;
-    }
-}
+
 
 
 .card-detail-container{
@@ -130,12 +124,12 @@
       left: 50%;
       transform: translate(-50%, -50%);
       min-width: 400px;
-      max-width: 80%;
+      /* max-width: 80%; */
       max-height: 80vh;
       overflow-y: auto;
-      background-color: rgb(255, 255, 255);
+      background-color: rgb(1, 1, 1);
       outline: solid 0px;
-      box-shadow: rgba(0, 0, 0, 0.2) 0px 11px 15px -7px, rgba(0, 0, 0, 0.14) 0px 24px 38px 3px, rgba(0, 0, 0, 0.12) 0px 9px 46px 8px;
+      box-shadow: rgba(252, 251, 251, 0.945) 0px 11px 15px -7px, rgba(7, 7, 7, 0.995) 0px 24px 38px 3px, rgba(2, 2, 2, 0.991) 0px 9px 46px 8px;
       padding: 16px;
       border-radius: 10px;
 
@@ -143,6 +137,7 @@
         font-size: 1.25rem;
         line-height: 1.6;
         font-weight: 600;
+        text-align: center;
         }
         span {
             display: inline-block;
@@ -158,4 +153,132 @@
             font-weight: 400;
             font-size: 1rem;
         }
+        p{
+            word-break: keep-all;
+        }
   }
+
+.card-detail-body{
+    /* display: flex;
+    flex-direction: row; */
+    img{
+        float: left;
+        margin-right: 20px;
+    }
+}
+.logo{
+    /* position:relative; */
+    /* top:-100px; */
+    background-color: transparent;  
+    mix-blend-mode:color-burn;
+    background-size: cover; 
+}
+
+@media screen and (max-width: 740px) {
+    .course-container {
+        max-width: 90%;
+        margin: auto;
+        grid-template-columns: 1fr;
+    }
+    .card-detail-body{
+         display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        img{
+            float: none;
+            margin: 0;
+            align-self: center;
+        }
+    }
+}
+
+/* css for profile */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
+
+.card {
+    padding: 15px;
+    width: 350px;
+    background: #222;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
+    user-select: none;
+}
+
+.cover-photo {
+    position: relative;
+    background: url(https://i.imgur.com/jxyuizJ.jpeg);
+    background-size: cover;
+    height: 180px;
+    border-radius: 5px 5px 0 0;
+}
+
+.profile {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    bottom: -60px;
+    left: 15px;
+    border-radius: 50%;
+    border: 2px solid #222;
+    background: #222;
+    padding: 5px;
+}
+
+.profile-name {
+    font-size: 20px;
+    margin: 25px 0 0 120px;
+    color: #fff;
+}
+
+.about {
+    margin: 0 !important;
+    line-height: 1.6;
+    height: auto !important;
+}
+
+.btn {
+    width: calc(50% - 10px) !important;
+    margin: 0 5px !important;
+    display: inline-block !important;
+    background: #7ce3ff;
+    padding: 10px 25px;
+    border-radius: 3px;
+    border: 1px solid #7ce3ff;
+    font-weight: bold;
+    font-family: Montserrat;
+    cursor: pointer;
+    color: #222;
+    transition: 0.2s;
+}
+
+.btn:last-of-type {
+    background: transparent;
+    border-color: #7ce3ff;
+    color: #7ce3ff;
+}
+
+.btn:hover {
+    background: #7ce3ff;
+    color: #222;
+}
+
+.icons {
+    width: 180px;
+    margin: 0 auto 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.icons i {
+    cursor: pointer;
+    padding: 5px;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.icons i:hover {
+    color: #7ce3ff;
+}
